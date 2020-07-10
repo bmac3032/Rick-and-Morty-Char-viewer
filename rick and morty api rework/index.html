@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/slate/bootstrap.min.css"
+      integrity="sha384-idNH3UIOiZbCf8jxqu4iExnH34y5UovfW/Mg8T5WfNvoJolDvknoNqR69V2OexgF"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <a href="#" class="navbar-brand">Rick and Morty API</a>
+      </div>
+    </nav>
+    <div class="container mt-4">
+      <div class="search card card-body">
+        <h1>Search Rick and Morty Characters</h1>
+        <p class="lead">
+          Enter a characters name to see information about them
+        </p>
+        <input
+          type="text"
+          id="searchChar"
+          class="form-control"
+          placeholder="Enter characters name..."
+        />
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-12 col-m-6 col-lg-4">
+          <div class="card mt-5 char-card">
+            <img
+              src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+              alt="Selected Character"
+              class="card-img-top img-fluid"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Rick Sanchez</h5>
+              <span class="badge badge-warning">Human</span>
+              <span class="badge badge-success">Alive</span>
+              <span class="badge badge-info">Earth</span>
+              <span class="badge badge-secondary">Episodes: 36</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="ui.js"></script>
+  </body>
+</html>
